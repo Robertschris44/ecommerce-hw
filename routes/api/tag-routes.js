@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
       {
         model: Product,
         through: ProductTag,
-        as: 'productTag_tag'
+        as: 'productTag_product'
       }
     ]
   })
@@ -34,7 +34,7 @@ router.get('/:id', (req, res) => {
       {
         model: Product,
         through: ProductTag,
-        as: 'productTag_tag'
+        as: 'productTag_product'
       }
     ]
   })
@@ -76,7 +76,7 @@ router.put('/:id', (req, res) => {
   )
   .then(TagData => {
     if(!TagData) {
-      res.status(404).json({message: 'No tag found'});
+      res.status(404).json({ message: 'No tag found'});
       return;
     }
     res.json(TagData);
