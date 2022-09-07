@@ -25,4 +25,4 @@ THEN I am able to successfully create, update, and delete data in my database
 npm init -y, npm i express, npm i mysql12, npm i sequelize, npm i dotenv
 
 ## VIDEO LINK
-[]
+[https://drive.google.com/file/d/1G4j63-GiRL4uE6wxle8_NElN6J914Ard/view]
